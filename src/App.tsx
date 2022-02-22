@@ -1,9 +1,12 @@
-import { RoutePaths } from "./routes";
 import { ChakraProvider } from "@chakra-ui/react";
-import { theme } from "./theme";
+import { Global } from "@emotion/react";
+
+import { GlobalStyles, theme } from "./styles";
+import { RoutePaths } from "./routes";
 
 const App = () => (
 	<ChakraProvider resetCSS theme={theme}>
+		<Global styles={GlobalStyles} />
 		<RoutePaths />
 	</ChakraProvider>
 );

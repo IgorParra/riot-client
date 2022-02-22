@@ -1,4 +1,8 @@
-import { Box } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 export const Client = () => {
-	return <Box bg="valorant-red">client da massa</Box>;
+	return (
+		<Flex h="100%" bg="valorant-red">
+			client da massa
+		</Flex>
+	);
 };
