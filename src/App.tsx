@@ -1,10 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
 import { RoutePaths } from "./routes";
+import { ChakraProvider } from "@chakra-ui/react";
+import { theme } from "./theme";
 
 const App = () => (
-	<BrowserRouter>
+	<ChakraProvider resetCSS theme={theme}>
 		<RoutePaths />
-	</BrowserRouter>
+	</ChakraProvider>
 );
 
 export default App;

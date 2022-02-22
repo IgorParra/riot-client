@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import { Client, LeagueOfLegendsPage, ValorantPage } from "../pages";
 import { RoutesRender } from "./routesRender";
 import { RouterRenderProps } from "./types";
@@ -8,4 +9,8 @@ const InternRoutes: RouterRenderProps[] = [
 	{ path: "/", Element: <Client /> },
 ];
 
-export const RoutePaths = () => <RoutesRender Routes={InternRoutes} />;
+export const RoutePaths = () => (
+	<BrowserRouter>
+		<RoutesRender Routes={InternRoutes} />
+	</BrowserRouter>
+);

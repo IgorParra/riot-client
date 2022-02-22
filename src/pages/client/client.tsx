@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/react";
 export const Client = () => {
-	return <div>client da massa</div>;
+	return <Box bg="valorant-red">client da massa</Box>;
 };
